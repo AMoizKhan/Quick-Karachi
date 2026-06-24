@@ -1,0 +1,55 @@
+import IconPlaceholder from "../../components/IconPlaceholder/IconPlaceholder";
+
+export default function MissionVision() {
+  return (
+    <section className="w-full py-16 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <article className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+            <div className="w-14 h-14 rounded-full bg-[#fd0014]/10 flex items-center justify-center mb-5">
+              <IconPlaceholder
+                src="/icons/professional-driver.svg"
+                alt="Professional Driver"
+                width={36}
+                height={36}
+              />
+            </div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#fd0014] mb-2">
+              Professional Driver
+            </p>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              Our Mission
+            </h2>
+            <p className="text-gray-600 leading-8">
+              To connect people to their destinations through a secure,
+              affordable, and convenient ride service built on verified drivers,
+              customer loyalty, and digital innovation.
+            </p>
+          </article>
+
+          <article className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+            <div className="w-14 h-14 rounded-full bg-[#fd0014]/10 flex items-center justify-center mb-5">
+              <IconPlaceholder
+                src="/icons/professional-driver.svg"
+                alt="Professional Driver"
+                width={36}
+                height={36}
+              />
+            </div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#fd0014] mb-2">
+              Professional Driver
+            </p>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              Our Vision
+            </h2>
+            <p className="text-gray-600 leading-8">
+              To redefine urban mobility in Karachi by setting the standard for
+              safe, affordable, and reliable transportation powered by trust and
+              innovation.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  );
+}

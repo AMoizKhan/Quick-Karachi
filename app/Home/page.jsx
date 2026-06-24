@@ -1,18 +1,26 @@
 import React from "react";
-import Header from "../components/header";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import Testimonials from "../components/Testimonials/Testimonials";
+import FAQs from "../components/FAQs/FAQs";
+import ContactSection from "../components/Contact/ContactSection";
 import Hero from "./Components/hero";
 import ChooseRide from "./Components/ride";
 import AboutSection from "./Components/AboutSection";
 import ServicesSection from "./Components/ServicesSection";
 
 export default function Mainpage() {
-    return (
-        <div>
-            <Header/>
-            <Hero/>
-            <ChooseRide/>
-            <AboutSection/>
-            <ServicesSection/>
-        </div>
-    )
+  return (
+    <div>
+      <Header />
+      <Hero />
+      <ChooseRide />
+      <AboutSection />
+      <ServicesSection />
+      <Testimonials />
+      <FAQs />
+      <ContactSection showFormOnly />
+      <Footer />
+    </div>
+  );
 }

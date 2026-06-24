@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="12" fill="#F3F4F6"/>
+  <path d="M32 16c-4.4 0-8 3.1-8 7v2h16v-2c0-3.9-3.6-7-8-7z" fill="#FD0014"/>
+  <circle cx="32" cy="14" r="6" fill="#FD0014"/>
+  <path d="M18 30c0-2.2 1.8-4 4-4h20c2.2 0 4 1.8 4 4v14H18V30z" fill="#E5E7EB"/>
+  <path d="M24 44h16v4c0 1.1-.9 2-2 2H26c-1.1 0-2-.9-2-2v-4z" fill="#9CA3AF"/>
+  <text x="32" y="58" text-anchor="middle" fill="#6B7280" font-size="6" font-family="Arial, sans-serif">ICON</text>
+</svg>
