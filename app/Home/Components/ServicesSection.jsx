@@ -19,6 +19,36 @@ const services = [
       "Our professional driver service in Karachi is perfect for a stress-free journey across the city.",
     image: "/images/services-bg.jpg",
   },
+  {
+    title: "Subscription & Loyalty Plans",
+    description: "",
+    image: "/images/services-bg.jpg",
+  },
+  {
+    title: "Flexible Payment Options",
+    description: "",
+    image: "/images/services-bg.jpg",
+  },
+  {
+    title: "Easy Booking Options",
+    description: "",
+    image: "/images/services-bg.jpg",
+  },
+  {
+    title: "Family Track Rides",
+    description: "",
+    image: "/images/services-bg.jpg",
+  },
+  {
+    title: "Women-Only Ride Service",
+    description: "",
+    image: "/images/services-bg.jpg",
+  },
+  {
+    title: "Daily Ride Service",
+    description: "",
+    image: "/images/services-bg.jpg",
+  },
 ];
 
 export default function ServicesSection() {

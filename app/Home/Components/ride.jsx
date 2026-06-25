@@ -12,14 +12,14 @@ const rides = [
     id: 2,
     title: "Standard Cars",
     icon: "/icons/standard.png",
-    image: "/images/civic.png",
+    image: "/images/civic1.png",
     bg: "#fd0014",
   },
   {
     id: 3,
     title: "SUVs",
     icon: "/icons/suv.png",
-    image: "/images/tucso.png",
+    image: "/images/tucso1.png",
     bg: "#fd0014",
   },
   {
@@ -55,9 +55,7 @@ export default function ChooseRide() {
             <div
               key={ride.id}
               className="relative overflow-hidden rounded-2xl min-h-[250px] flex items-center"
-              style={{
-                backgroundColor: ride.bg,
-              }}
+              style={{ backgroundColor: ride.bg }}
             >
               {/* Left Content */}
               <div className="w-[55%] p-6 md:p-8 text-white z-10">
@@ -82,13 +80,13 @@ export default function ChooseRide() {
               </div>
 
               {/* Right Image */}
-              <div className="absolute right-0 bottom-0 w-[52%] h-full flex items-end justify-center bg-white">
+              <div className="absolute left-[90px] bottom-0 w-[600px] flex items-end justify-center z-20 pointer-events-none">
                 <Image
                   src={ride.image}
                   alt={ride.title}
                   width={320}
-                  height={220}
-                  className="object-contain w-full h-auto"
+                  height={200}
+                  className="object-contain h-[180px] w-[900px] "
                 />
               </div>
             </div>
@@ -98,3 +96,4 @@ export default function ChooseRide() {
     </section>
   );
 }
+

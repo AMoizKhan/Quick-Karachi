@@ -8,6 +8,7 @@ import Hero from "./Components/hero";
 import ChooseRide from "./Components/ride";
 import AboutSection from "./Components/AboutSection";
 import ServicesSection from "./Components/ServicesSection";
+import FeaturesSection from "./Components/FeaturesSection";
 
 export default function Mainpage() {
   return (
@@ -20,6 +21,7 @@ export default function Mainpage() {
       <Testimonials />
       <FAQs />
       <ContactSection showFormOnly />
+      <FeaturesSection/>
       <Footer />
     </div>
   );

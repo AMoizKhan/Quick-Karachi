@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -40,53 +41,71 @@ export default function FAQs() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section className="w-full py-16 bg-gray-50">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h4 className="text-sm md:text-base font-semibold uppercase tracking-widest text-[#fd0014] mb-3">
-            FAQs
-          </h4>
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
-            Frequently Asked Questions
-          </h2>
-          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-            Find answers to common questions about booking, safety, payments,
-            and our services across Karachi.
-          </p>
-        </div>
+    <section className="w-full py-16 md:py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+          
+          {/* Left Side */}
+          <div className="lg:sticky lg:top-24">
+            <span className="inline-block text-sm font-semibold uppercase tracking-widest text-[#fd0014] mb-4">
+              FAQs
+            </span>
 
-        <div className="space-y-4">
-          {faqItems.map((item, index) => {
-            const isOpen = openIndex === index;
+            <h2 className="text-3xl lg:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+              Frequently Asked Questions
+            </h2>
 
-            return (
-              <div
-                key={item.question}
-                className="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm"
-              >
-                <button
-                  type="button"
-                  onClick={() => setOpenIndex(isOpen ? -1 : index)}
-                  className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left"
+            {/* <p className="mt-5 text-gray-600 text-base md:text-lg leading-7 max-w-xl">
+              Find answers to common questions about booking, safety, payments,
+              and our transport services across Karachi. If you still need help,
+              our team is always ready to assist you.
+            </p> */}
+          </div>
+
+          {/* Right Side */}
+          <div className="space-y-4">
+            {faqItems.map((item, index) => {
+              const isOpen = openIndex === index;
+
+              return (
+                <div
+                  key={item.question}
+                  className="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden"
                 >
-                  <span className="font-semibold text-gray-900">
-                    {item.question}
-                  </span>
-                  <BsChevronDown
-                    className={`w-5 h-5 text-[#fd0014] shrink-0 transition-transform duration-200 ${
-                      isOpen ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
+                  <button
+                    type="button"
+                    onClick={() => setOpenIndex(isOpen ? -1 : index)}
+                    className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left"
+                  >
+                    <span className="text-base md:text-lg font-semibold text-gray-900">
+                      {item.question}
+                    </span>
 
-                {isOpen && (
-                  <div className="px-6 pb-5 text-gray-600 leading-7">
-                    {item.answer}
+                    <BsChevronDown
+                      className={`w-5 h-5 text-[#fd0014] shrink-0 transition-transform duration-300 ${
+                        isOpen ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+
+                  <div
+                    className={`grid transition-all duration-300 ease-in-out ${
+                      isOpen
+                        ? "grid-rows-[1fr] opacity-100"
+                        : "grid-rows-[0fr] opacity-0"
+                    }`}
+                  >
+                    <div className="overflow-hidden">
+                      <div className="px-6 pb-5 text-gray-600 leading-7">
+                        {item.answer}
+                      </div>
+                    </div>
                   </div>
-                )}
-              </div>
-            );
-          })}
+                </div>
+              );
+            })}
+          </div>
+
         </div>
       </div>
     </section>

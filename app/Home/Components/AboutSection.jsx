@@ -7,14 +7,14 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
           
           {/* Left Content */}
-          <div>
+          <div className="flex flex-col items-start justify-start leading-tight">
             <h4 className="text-sm md:text-base font-semibold uppercase tracking-widest text-[#fd0014] mb-3">
               About Us
             </h4>
 
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 lg:text-6xl  mb-6">
               Quick Karachi <br />
-              Transportation <br />
+            <span className="text-red-600">   Transportation </span> <br />
               Service
             </h2>
 
