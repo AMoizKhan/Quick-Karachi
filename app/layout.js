@@ -2,6 +2,7 @@ import { Poppins, Roboto } from "next/font/google";
 import "./globals.css";
 import Loader from "./components/Loader/Loader";
 import WhatsAppFloat from "./components/WhatsAppFloat/WhatsAppFloat";
+import MobileCardReveal from "./components/MobileCardReveal/MobileCardReveal";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
         <Loader />
         {children}
         <WhatsAppFloat />
+        <MobileCardReveal />
       </body>
     </html>
   );

@@ -19,6 +19,7 @@ export default function ContactWhy() {
         {reasons.map((reason) => (
           <div
             key={reason}
+            data-reveal-card
             className="group flex items-start gap-4 p-5 bg-white rounded-xl border border-gray-100 shadow-sm hover:bg-red-600 active:bg-red-600 hover:shadow-md transition-all duration-300"
           >
             <div className="w-12 h-12 rounded-full bg-white border border-gray-100 flex items-center justify-center shrink-0 shadow-sm">

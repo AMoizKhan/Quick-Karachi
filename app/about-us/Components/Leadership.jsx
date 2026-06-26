@@ -35,9 +35,10 @@ export default function Leadership() {
           {leaders.map((leader) => (
             <article
               key={leader.name}
+              data-reveal-card
               className="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm text-center hover:bg-red-600 active:bg-red-600 hover:shadow-md transition-all duration-300"
             >
-              <div className="w-20 h-20 rounded-full bg-[#fd0014]/10 flex items-center justify-center mx-auto mb-5 transition-colors duration-300 group-hover:bg-white group-active:bg-white">
+              <div className="w-20 h-20 rounded-full bg-[#fd0014]/10 flex items-center justify-center mx-auto mb-5 transition-colors duration-300 group-hover:bg-white group-active:bg-white group-[.in-view]:bg-white">
                 <FaUserTie className="w-8 h-8 text-[#fd0014]" />
               </div>
               <p className="text-sm font-semibold uppercase tracking-widest text-[#fd0014] mb-2 transition-colors duration-300 group-hover:text-white group-active:text-white">

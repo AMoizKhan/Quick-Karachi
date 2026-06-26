@@ -52,12 +52,13 @@ export default function ServiceProcess() {
           {steps.map(({ number, title, description, icon: Icon }) => (
             <div
               key={number}
+              data-reveal-card
               className="group relative bg-white rounded-2xl p-6 md:p-8 border border-gray-100 shadow-sm hover:shadow-md hover:bg-red-600 active:bg-red-600 transition-all duration-300"
             >
-              <span className="absolute top-5 right-6 text-4xl md:text-5xl font-bold text-gray-100 select-none transition-colors duration-300 group-hover:text-white/20 group-active:text-white/20">
+              <span className="absolute top-5 right-6 text-4xl md:text-5xl font-bold text-gray-100 select-none transition-colors duration-300 group-hover:text-white group-active:text-white">
                 {number}
               </span>
-              <div className="relative w-14 h-14 rounded-full bg-[#fd0014]/10 flex items-center justify-center mb-5 transition-colors duration-300 group-hover:bg-white group-active:bg-white">
+              <div className="relative w-14 h-14 rounded-full bg-[#fd0014]/10 flex items-center justify-center mb-5 transition-colors duration-300 group-hover:bg-white group-active:bg-white group-[.in-view]:bg-white">
                 <Icon className="w-6 h-6 text-[#fd0014]" />
               </div>
               <h3 className="relative text-xl font-bold text-gray-900 mb-3 transition-colors duration-300 group-hover:text-white group-active:text-white">

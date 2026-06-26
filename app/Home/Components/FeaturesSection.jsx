@@ -45,9 +45,10 @@ export default function FeaturesSection() {
             return (
               <div
                 key={item.id}
+                data-reveal-card
                 className="group bg-white border border-gray-200 rounded-2xl p-6 text-center shadow-sm hover:shadow-md hover:bg-red-600 active:bg-red-600 transition-all duration-300"
               >
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-red-50 flex items-center justify-center transition-colors duration-300 group-hover:bg-white group-active:bg-white">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-red-50 flex items-center justify-center transition-colors duration-300 group-hover:bg-white group-active:bg-white group-[.in-view]:bg-white">
                   <Icon className="text-red-600 w-8 h-8" />
                 </div>
 

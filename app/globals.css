@@ -86,3 +86,20 @@ h6 {
 .animate-logoPulse {
   animation: logoPulse 1s ease-in-out infinite;
 }
+
+/* Mobile scroll-reveal: cards turn red with white text as they scroll into
+   view. The `in-view` class is only added by JS on mobile screens, so the
+   desktop hover design is never affected. */
+[data-reveal-card].in-view {
+  background-color: #dc2626;
+  border-color: transparent;
+}
+
+[data-reveal-card].in-view h1,
+[data-reveal-card].in-view h2,
+[data-reveal-card].in-view h3,
+[data-reveal-card].in-view h4,
+[data-reveal-card].in-view p,
+[data-reveal-card].in-view span {
+  color: #ffffff;
+}

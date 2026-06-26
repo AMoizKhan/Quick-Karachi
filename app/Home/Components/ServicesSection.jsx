@@ -196,10 +196,11 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <div
               key={index}
+              data-reveal-card
               className="group bg-white rounded-2xl border border-gray-100 p-8 shadow-md transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:bg-red-600 active:bg-red-600"
             >
               {/* Icon */}
-              <div className="w-20 h-20 rounded-full bg-red-50 flex items-center justify-center group-hover:bg-white group-active:bg-white transition-all duration-300 mx-auto">
+              <div className="w-20 h-20 rounded-full bg-red-50 flex items-center justify-center group-hover:bg-white group-active:bg-white group-[.in-view]:bg-white transition-all duration-300 mx-auto">
                 <Image
                   src={service.icon}
                   alt={service.title}
@@ -221,7 +222,7 @@ export default function ServicesSection() {
 
               {/* Button */}
               <div className="mt-8 flex justify-center">
-                <button className="px-6 py-3 bg-red-600 text-white rounded-full font-medium transition-all duration-300 hover:scale-105 group-hover:bg-white group-hover:text-red-600 group-active:bg-white group-active:text-red-600">
+                <button className="px-6 py-3 bg-red-600 text-white rounded-full font-medium transition-all duration-300 hover:scale-105 group-hover:bg-white group-hover:text-red-600 group-active:bg-white group-active:text-red-600 group-[.in-view]:bg-white group-[.in-view]:text-red-600">
                   Book Now
                 </button>
               </div>

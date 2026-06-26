@@ -31,8 +31,11 @@ export default function WhoWeAre() {
             </div>
           </div>
 
-          <div className="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:bg-red-600 active:bg-red-600 hover:shadow-md transition-all duration-300">
-            <div className="w-14 h-14 rounded-full bg-[#fd0014]/10 flex items-center justify-center mb-5 transition-colors duration-300 group-hover:bg-white group-active:bg-white">
+          <div
+            data-reveal-card
+            className="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:bg-red-600 active:bg-red-600 hover:shadow-md transition-all duration-300"
+          >
+            <div className="w-14 h-14 rounded-full bg-[#fd0014]/10 flex items-center justify-center mb-5 transition-colors duration-300 group-hover:bg-white group-active:bg-white group-[.in-view]:bg-white">
               <IconPlaceholder
                 src="/icons/professional-driver.svg"
                 alt="Professional Driver"
