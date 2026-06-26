@@ -1,5 +1,7 @@
 import { Poppins, Roboto } from "next/font/google";
 import "./globals.css";
+import Loader from "./components/Loader/Loader";
+import WhatsAppFloat from "./components/WhatsAppFloat/WhatsAppFloat";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -26,7 +28,11 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${poppins.variable} ${roboto.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Loader />
+        {children}
+        <WhatsAppFloat />
+      </body>
     </html>
   );
 }

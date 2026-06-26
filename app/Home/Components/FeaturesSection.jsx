@@ -45,17 +45,17 @@ export default function FeaturesSection() {
             return (
               <div
                 key={item.id}
-                className="bg-white border border-gray-200 rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition"
+                className="group bg-white border border-gray-200 rounded-2xl p-6 text-center shadow-sm hover:shadow-md hover:bg-red-600 active:bg-red-600 transition-all duration-300"
               >
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-red-50 flex items-center justify-center">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-red-50 flex items-center justify-center transition-colors duration-300 group-hover:bg-white group-active:bg-white">
                   <Icon className="text-red-600 w-8 h-8" />
                 </div>
 
-                <h3 className="text-lg font-semibold text-black mb-2">
+                <h3 className="text-lg font-semibold text-black mb-2 transition-colors duration-300 group-hover:text-white group-active:text-white">
                   {item.title}
                 </h3>
 
-                <p className="text-sm text-gray-600 leading-6">
+                <p className="text-sm text-gray-600 leading-6 transition-colors duration-300 group-hover:text-white group-active:text-white">
                   {item.desc}
                 </p>
               </div>

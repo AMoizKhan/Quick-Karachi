@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutSection() {
   return (
@@ -33,9 +34,12 @@ export default function AboutSection() {
               journey.
             </p>
 
-            <button className="bg-[#fd0014] hover:bg-red-700 text-white px-6 py-3 rounded-md font-medium transition">
+            <Link
+              href="/about-us"
+              className="inline-block bg-[#fd0014] hover:bg-red-700 text-white px-6 py-3 rounded-md font-medium transition"
+            >
               Read More
-            </button>
+            </Link>
           </div>
 
           {/* Right Image */}

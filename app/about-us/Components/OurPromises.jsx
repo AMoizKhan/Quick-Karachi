@@ -18,9 +18,9 @@ const promises = [
 
 export default function OurPromises() {
   return (
-    <section className="w-full py-16 bg-gray-50">
+    <section className="w-full py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-left mb-12">
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
             Our Promises
           </h2>
@@ -30,12 +30,12 @@ export default function OurPromises() {
           {promises.map(({ title, icon: Icon }) => (
             <div
               key={title}
-              className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm text-center"
+              className="group bg-white rounded-xl p-6 border border-gray-100 shadow-sm text-center hover:bg-red-600 active:bg-red-600 hover:shadow-md transition-all duration-300"
             >
-              <div className="w-14 h-14 rounded-full bg-[#fd0014] flex items-center justify-center mx-auto mb-4">
-                <Icon className="w-6 h-6 text-white" />
+              <div className="w-14 h-14 rounded-full bg-[#fd0014] flex items-center justify-center mx-auto mb-4 transition-colors duration-300 group-hover:bg-white group-active:bg-white">
+                <Icon className="w-6 h-6 text-white transition-colors duration-300 group-hover:text-[#fd0014] group-active:text-[#fd0014]" />
               </div>
-              <h3 className="font-bold text-gray-900 uppercase tracking-wide text-sm">
+              <h3 className="font-bold text-gray-900 uppercase tracking-wide text-sm transition-colors duration-300 group-hover:text-white group-active:text-white">
                 {title}
               </h3>
             </div>

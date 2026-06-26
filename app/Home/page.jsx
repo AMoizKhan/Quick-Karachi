@@ -9,6 +9,7 @@ import ChooseRide from "./Components/ride";
 import AboutSection from "./Components/AboutSection";
 import ServicesSection from "./Components/ServicesSection";
 import FeaturesSection from "./Components/FeaturesSection";
+import ServiceStats from "../servicess/Components/ServiceStats";
 
 export default function Mainpage() {
   return (
@@ -16,6 +17,7 @@ export default function Mainpage() {
       <Header />
       <Hero />
       <ChooseRide />
+      <ServiceStats />
       <AboutSection />
       <ServicesSection />
       <Testimonials />

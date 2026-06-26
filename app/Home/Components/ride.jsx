@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const rides = [
   {
@@ -54,11 +55,11 @@ export default function ChooseRide() {
           {rides.map((ride) => (
             <div
               key={ride.id}
-              className="relative overflow-hidden rounded-2xl min-h-[250px] flex items-center"
+              className="relative overflow-hidden rounded-2xl min-h-[230px] sm:min-h-[250px] flex items-center"
               style={{ backgroundColor: ride.bg }}
             >
               {/* Left Content */}
-              <div className="w-[55%] p-6 md:p-8 text-white z-10">
+              <div className="relative w-[55%] sm:w-1/2 p-5 sm:p-6 md:p-8 text-white z-10">
                 <div className="w-12 h-12 rounded-full bg-[#fd0014] flex items-center justify-center mb-4 shadow-md">
                   <Image
                     src={ride.icon}
@@ -69,24 +70,27 @@ export default function ChooseRide() {
                   />
                 </div>
 
-                <h3 className="text-2xl font-bold mb-6 leading-snug">
+                <h3 className="text-xl sm:text-2xl font-bold mb-5 sm:mb-6 leading-snug">
                   {ride.title}
                 </h3>
 
-                <button className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-4 py-2 rounded-md text-sm font-medium transition">
+                <Link
+                  href="/contact-us"
+                  className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-4 py-2 rounded-md text-sm font-medium transition"
+                >
                   View Vehicles
                   <span>→</span>
-                </button>
+                </Link>
               </div>
 
               {/* Right Image */}
-              <div className="absolute left-[90px] bottom-0 w-[600px] flex items-end justify-center z-20 pointer-events-none">
+              <div className="absolute right-0 bottom-0 w-[48%] sm:w-1/2 max-w-[360px] flex items-end justify-end z-20 pointer-events-none">
                 <Image
                   src={ride.image}
                   alt={ride.title}
-                  width={320}
-                  height={200}
-                  className="object-contain h-[180px] w-[900px] "
+                  width={600}
+                  height={360}
+                  className="object-contain w-full h-auto"
                 />
               </div>
             </div>

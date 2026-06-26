@@ -1,7 +1,7 @@
 export default function ServicesIntro() {
   return (
     <section className="w-full py-16 bg-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 uppercase tracking-wide mb-6">
           Transportation Solutions Across Karachi
         </h2>

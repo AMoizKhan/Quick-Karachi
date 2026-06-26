@@ -46,9 +46,9 @@ const services = [
 
 export default function OurServices() {
   return (
-    <section className="w-full py-16 bg-gray-50">
+    <section className="w-full py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-left mb-12">
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
             Our Services
           </h2>
@@ -58,9 +58,9 @@ export default function OurServices() {
           {services.map((service) => (
             <article
               key={service.title}
-              className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-200"
+              className="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md hover:bg-red-600 active:bg-red-600 transition-all duration-300"
             >
-              <div className="w-14 h-14 rounded-full bg-[#fd0014]/10 flex items-center justify-center mb-5">
+              <div className="w-14 h-14 rounded-full bg-[#fd0014]/10 flex items-center justify-center mb-5 transition-colors duration-300 group-hover:bg-white group-active:bg-white">
                 <IconPlaceholder
                   src="/icons/professional-driver.svg"
                   alt="Professional Driver"
@@ -69,20 +69,22 @@ export default function OurServices() {
                 />
               </div>
 
-              <p className="text-xs font-semibold uppercase tracking-widest text-[#fd0014] mb-2">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#fd0014] mb-2 transition-colors duration-300 group-hover:text-white group-active:text-white">
                 Professional Driver
               </p>
 
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
+              <h3 className="text-xl font-bold text-gray-900 mb-4 transition-colors duration-300 group-hover:text-white group-active:text-white">
                 {service.title}
               </h3>
 
-              <p className="text-gray-600 leading-7 mb-4">
+              <p className="text-gray-600 leading-7 mb-4 transition-colors duration-300 group-hover:text-white group-active:text-white">
                 {service.description}
               </p>
 
               {service.bestFor && (
-                <p className="text-sm text-gray-500 italic">{service.bestFor}</p>
+                <p className="text-sm text-gray-500 italic transition-colors duration-300 group-hover:text-white group-active:text-white">
+                  {service.bestFor}
+                </p>
               )}
             </article>
           ))}

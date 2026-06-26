@@ -19,9 +19,9 @@ export default function ContactWhy() {
         {reasons.map((reason) => (
           <div
             key={reason}
-            className="flex items-start gap-4 p-5 bg-gray-50 rounded-xl border border-gray-100"
+            className="group flex items-start gap-4 p-5 bg-white rounded-xl border border-gray-100 shadow-sm hover:bg-red-600 active:bg-red-600 hover:shadow-md transition-all duration-300"
           >
-            <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center shrink-0 shadow-sm">
+            <div className="w-12 h-12 rounded-full bg-white border border-gray-100 flex items-center justify-center shrink-0 shadow-sm">
               <IconPlaceholder
                 src="/icons/professional-driver.svg"
                 alt="Professional Driver"
@@ -29,7 +29,9 @@ export default function ContactWhy() {
                 height={32}
               />
             </div>
-            <p className="text-gray-700 leading-7 pt-2">{reason}</p>
+            <p className="text-gray-700 leading-7 pt-2 transition-colors duration-300 group-hover:text-white group-active:text-white">
+              {reason}
+            </p>
           </div>
         ))}
       </div>

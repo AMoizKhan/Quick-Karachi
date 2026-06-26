@@ -68,7 +68,7 @@ export default function Testimonials() {
             {duplicatedTestimonials.map((item, index) => (
               <article
                 key={index}
-                className="w-[320px] md:w-[360px] flex-shrink-0 bg-red-600 rounded-2xl p-8 shadow-sm"
+                className="w-[280px] sm:w-[320px] md:w-[360px] flex-shrink-0 bg-red-600 rounded-2xl p-6 sm:p-8 shadow-sm"
               >
                 <FaQuoteLeft className="w-8 h-8 text-white mb-4" />
 

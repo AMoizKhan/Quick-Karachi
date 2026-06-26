@@ -46,13 +46,17 @@ export default function ContactInfo() {
       {contactItems.map((item) => {
         const Icon = item.icon;
         const content = (
-          <div className="flex items-start gap-4 p-6 bg-white rounded-xl border border-gray-200 shadow-sm h-full">
-            <div className="w-12 h-12 rounded-full bg-[#fd0014]/10 flex items-center justify-center shrink-0">
+          <div className="group flex items-start gap-4 p-6 bg-white rounded-xl border border-gray-200 shadow-sm h-full hover:bg-red-600 active:bg-red-600 transition-colors duration-300">
+            <div className="w-12 h-12 rounded-full bg-[#fd0014]/10 flex items-center justify-center shrink-0 transition-colors duration-300 group-hover:bg-white group-active:bg-white">
               <Icon className="w-5 h-5 text-[#fd0014]" />
             </div>
             <div>
-              <h3 className="font-semibold text-gray-900 mb-1">{item.title}</h3>
-              <p className="text-gray-600 text-sm leading-6">{item.value}</p>
+              <h3 className="font-semibold text-gray-900 mb-1 transition-colors duration-300 group-hover:text-white group-active:text-white">
+                {item.title}
+              </h3>
+              <p className="text-gray-600 text-sm leading-6 transition-colors duration-300 group-hover:text-white group-active:text-white">
+                {item.value}
+              </p>
             </div>
           </div>
         );

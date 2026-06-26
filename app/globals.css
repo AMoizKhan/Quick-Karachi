@@ -20,10 +20,15 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -63,4 +68,21 @@ h6 {
 
 .animate-whatsappPulse {
   animation: whatsappPulse 1.8s infinite;
+}
+
+/* Page loader logo pulse */
+@keyframes logoPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.12);
+    opacity: 0.55;
+  }
+}
+
+.animate-logoPulse {
+  animation: logoPulse 1s ease-in-out infinite;
 }
