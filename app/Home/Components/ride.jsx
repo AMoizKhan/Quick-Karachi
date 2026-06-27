@@ -80,7 +80,7 @@ const rides = [
 ];
 export default function ChooseRide() {
   return (
-    <section className="w-full py-16 bg-white">
+    <section className="w-full py-16 bg-white overflow-x-clip">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-12">
