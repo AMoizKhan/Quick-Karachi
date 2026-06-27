@@ -69,7 +69,7 @@ export default function Hero() {
 
         {/* WhatsApp Button */}
         <a
-          href="https://wa.me/923000000000"
+          href="https://wa.me/923180860658"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center mt-30 sm:mt-10 gap-3 bg-red-600 hover:bg-red-700 active:scale-95 text-white font-semibold text-sm sm:text-base px-6 sm:px-7 py-3 rounded transition-all duration-200 animate-whatsappPulse"

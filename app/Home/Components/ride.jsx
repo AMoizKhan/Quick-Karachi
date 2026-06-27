@@ -1,37 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// const rides = [
 
-//   {
-//     id: 1,
-//     title: "Economy Cars",
-//     icon: "/icons/economy.png",
-//     image: "/images/alto.png",
-//     bg: "#fd0014",
-//   },
-//   {
-//     id: 2,
-//     title: "Standard Cars",
-//     icon: "/icons/standard.png",
-//     image: "/images/civic1.png",
-//     bg: "#fd0014",
-//   },
-//   {
-//     id: 3,
-//     title: "SUVs",
-//     icon: "/icons/suv.png",
-//     image: "/images/tucso1.png",
-//     bg: "#fd0014",
-//   },
-//   {
-//     id: 4,
-//     title: "Leisure & Events",
-//     icon: "/icons/placeholder.svg",
-//     image: "/images/camry.png",
-//     bg: "#fd0014",
-//   },
-// ];
 const rides = [
   {
     id: 1,
