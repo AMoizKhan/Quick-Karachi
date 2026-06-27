@@ -1,9 +1,3 @@
-// import {
-//   MapPinLine,
-//   MapPinLine,
-//   Car,
-//   TimeTwoOutline,
-// } from "./Icons";
 
 import { TimeTwoOutline, Car,MapPinLine,TruckDriver} from "@/app/components/IconPlaceholder/Icons";
 
@@ -38,8 +32,8 @@ const features = [
 export default function FeaturesSection() {
   return (
     <section className="w-full bg-white py-16">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className=" mx-auto px-4">
+        <div className="grid grid-cols1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-6">
           {features.map((item) => {
             const Icon = item.icon;
             return (

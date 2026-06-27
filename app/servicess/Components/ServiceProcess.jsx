@@ -34,18 +34,28 @@ const steps = [
 export default function ServiceProcess() {
   return (
     <section className="w-full py-16 md:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-left mb-12 md:mb-16">
-          <span className="inline-block text-sm font-semibold uppercase tracking-widest text-[#fd0014] mb-3">
-            How It Works
-          </span>
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
-            Booking a Ride Is Simple
-          </h2>
-          <p className="mt-5 max-w-2xl text-gray-600 text-base md:text-lg leading-8">
-            From your first message to the final drop-off, we keep every step
-            quick, clear, and stress-free.
-          </p>
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-center mb-12 md:mb-16">
+          <div className="relative inline-block px-8 py-6 text-center">
+            {/* Top Left Corner */}
+            <span className="absolute -top-2 -left-2 w-12 h-12 border-t-4 border-l-4 border-[#fd0014]"></span>
+
+            {/* Bottom Right Corner */}
+            <span className="absolute -bottom-2 -right-2 w-12 h-12 border-b-4 border-r-4 border-[#fd0014]"></span>
+
+            <span className="inline-block text-sm font-semibold uppercase tracking-widest text-[#fd0014] mb-3">
+              How It Works
+            </span>
+
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
+              Booking a Ride Is Simple
+            </h2>
+
+            {/* <p className="mt-5 max-w-2xl mx-auto text-gray-600 text-base md:text-lg leading-8">
+      From your first message to the final drop-off, we keep every step quick,
+      clear, and stress-free.
+    </p> */}
+          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">

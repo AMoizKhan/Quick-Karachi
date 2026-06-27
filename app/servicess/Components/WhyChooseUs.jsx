@@ -19,11 +19,19 @@ const reasons = [
 export default function WhyChooseUs() {
   return (
     <section className="w-full py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-left mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
-            Why Choose Us?
-          </h2>
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-center mb-14">
+          <div className="relative inline-block px-8 py-4">
+            {/* Top Left Border */}
+            <span className="absolute top-0 left-0 w-10 h-10 border-t-4 border-l-4 border-red-600"></span>
+
+            {/* Bottom Right Border */}
+            <span className="absolute bottom-0 right-0 w-10 h-10 border-b-4 border-r-4 border-red-600"></span>
+
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 text-center">
+              Why Choose Us?
+            </h2>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

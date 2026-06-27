@@ -1,24 +1,24 @@
-import Image from "next/image";
-
 export default function ContactHero() {
   return (
-    <section className="relative w-full min-h-[50vh] flex items-center">
-      <Image
-        src="/images/hero.png"
-        alt="Contact Hero Background"
-        fill
-        priority
-        className="object-cover"
-      />
-      <div className="absolute inset-0 bg-black/55" />
+    <section className="w-full min-h-[50vh] flex items-center bg-white relative">
+      {/* Overlay */}
+      <div className="absolute inset-0 " />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        <h4 className="text-sm md:text-base font-semibold uppercase tracking-widest text-red-400 mb-3">
+      {/* Content */}
+      <div className="relative z-10 w-full px-6 sm:px-10 lg:px-20 py-24 items-center flex flex-col justify-center text-center">
+        <h4 className="text-sm md:text-base font-semibold uppercase tracking-[5px] text-red-500 mb-4">
           Get In Touch
         </h4>
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight max-w-3xl">
-          Contact Us
+
+        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-black leading-tight">
+          Contact <br />
+          <span className="text-red-500">Quick Karachi</span>
         </h1>
+
+        <p className="mt-6 max-w-xl text-lg text-gray-900">
+          We're here to help. Contact us anytime for bookings, inquiries, or
+          transportation assistance across Karachi.
+        </p>
       </div>
     </section>
   );

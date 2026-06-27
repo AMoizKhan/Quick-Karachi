@@ -38,29 +38,25 @@ const faqItems = [
 ];
 
 export default function FAQs() {
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState(-1);
 
   return (
     <section className="w-full py-16 md:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           
           {/* Left Side */}
-          <div className="lg:sticky lg:top-24">
-            <span className="inline-block text-sm font-semibold uppercase tracking-widest text-[#fd0014] mb-4">
-              FAQs
-            </span>
-
-            <h2 className="text-3xl lg:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+          <div className="flex justify-center mb-16">
+          <div className="relative inline-block px-8 py-4">
+            <span className="absolute top-0 left-0 w-10 h-10 border-t-4 border-l-4 border-red-600"></span>
+            <span className="absolute bottom-0 right-0 w-10 h-10 border-b-4 border-r-4 border-red-600"></span>
+            
+            <p className="text-lg font-bold text-[#fd0014]">FAQS</p>
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 text-center">
               Frequently Asked Questions
             </h2>
-
-            {/* <p className="mt-5 text-gray-600 text-base md:text-lg leading-7 max-w-xl">
-              Find answers to common questions about booking, safety, payments,
-              and our transport services across Karachi. If you still need help,
-              our team is always ready to assist you.
-            </p> */}
           </div>
+        </div>
 
           {/* Right Side */}
           <div className="space-y-4">

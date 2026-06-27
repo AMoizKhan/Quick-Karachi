@@ -4,7 +4,7 @@ import { CONTACT_INFO } from "../../config/contactConfig";
 export default function ServiceCTA() {
   return (
     <section className="w-full py-16 md:py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 py-12 sm:px-10 md:px-16 md:py-16">
           {/* Glow accents */}
           <div className="pointer-events-none absolute -top-10 -left-10 w-60 h-60 bg-[#fd0014]/20 blur-3xl rounded-full" />

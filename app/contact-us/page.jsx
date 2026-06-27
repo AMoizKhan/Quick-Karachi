@@ -8,7 +8,7 @@ export default function ContactPage() {
   return (
     <div>
       <Header />
-      <ContactHero />
+      {/* <ContactHero /> */}
       <ContactSection />
       <Footer />
     </div>

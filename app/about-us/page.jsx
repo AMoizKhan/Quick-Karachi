@@ -13,11 +13,11 @@ export default function AboutPage() {
     <div>
       <Header />
       <AboutHero />
+      <Leadership />
       <AboutIntro />
       <WhoWeAre />
       <MissionVision />
       <OurPromises />
-      <Leadership />
       <Footer />
     </div>
   );

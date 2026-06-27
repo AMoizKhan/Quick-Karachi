@@ -16,7 +16,7 @@ export default function ServicesPage() {
     <div>
       <Header />
       <ServicesHero />
-      <ServicesIntro />
+      {/* <ServicesIntro /> */}
       <OurServices />
       <ServiceProcess />
       <ServiceStats />
