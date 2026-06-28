@@ -135,8 +135,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="pt-6 flex flex-col md:flex-row items-center justify-between gap-5">
-          <p className="text-sm text-gray-500 text-center md:text-left">
+        <div className="pt-6 flex flex-col md:flex-row items-end justify-between gap-5">
+          <p className="text-sm text-gray-500 text-start md:text-left">
             &copy; {new Date().getFullYear()} Quick Karachi Transportation
             Service. All rights reserved.
           </p>

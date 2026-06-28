@@ -55,7 +55,7 @@ export default function AboutSection() {
           {/* Right */}
           <div className="relative h-[320px] md:h-[500px] rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/images/about.jpg"
+              src="/images/bg-6.jpeg"
               alt="About Quick Karachi"
               fill
               className="object-cover"
