@@ -65,9 +65,9 @@ export default function WhyChooseUs() {
                 <Image
                   src={icon}
                   alt={title}
-                  width={40}
-                  height={40}
-                  className="w-5 h-5 object-contain"
+                  width={56}
+                  height={56}
+                  className="w-20 h-20 object-contain"
                 />
               </div>
               <h3 className="font-semibold text-gray-900 transition-colors duration-300">
