@@ -20,28 +20,36 @@ export default function OurPromises() {
   return (
     <section className="w-full py-16 bg-white">
       <div className=" mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-left mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
-            Our Promises
-          </h2>
+       <div className="flex justify-center mb-14">
+          <div className="relative inline-block px-8 py-4">
+            {/* Top Left Border */}
+            <span className="absolute top-0 left-0 w-10 h-10 border-t-4 border-l-4 border-red-600"></span>
+
+            {/* Bottom Right Border */}
+            <span className="absolute bottom-0 right-0 w-10 h-10 border-b-4 border-r-4 border-red-600"></span>
+
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 text-center">
+              Our Promises
+            </h2>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {promises.map(({ title, icon: Icon }) => (
-            <div
-              key={title}
-              data-reveal-card
-              className="group bg-white rounded-xl p-6 border border-gray-100 shadow-sm text-center hover:bg-red-600 active:bg-red-600 hover:shadow-md transition-all duration-300"
-            >
-              <div className="w-14 h-14 rounded-full bg-[#fd0014] flex items-center justify-center mx-auto mb-4 transition-colors duration-300 group-hover:bg-white group-active:bg-white group-[.in-view]:bg-white">
-                <Icon className="w-6 h-6 text-white transition-colors duration-300 group-hover:text-[#fd0014] group-active:text-[#fd0014] group-[.in-view]:text-[#fd0014]" />
-              </div>
-              <h3 className="font-bold text-gray-900 uppercase tracking-wide text-sm transition-colors duration-300 group-hover:text-white group-active:text-white">
-                {title}
-              </h3>
-            </div>
-          ))}
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  {promises.map(({ title, icon: Icon }) => (
+    <div
+      key={title}
+      data-reveal-card
+      className="group bg-white rounded-xl p-6 border border-gray-100 shadow-sm text-center hover:border-red-600 hover:shadow-md transition-all duration-300"
+    >
+      <div className="w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:scale-110">
+        <Icon className="w-6 h-6 text-[#fd0014] transition-colors duration-300" />
+      </div>
+      <h3 className="font-bold text-gray-900 uppercase tracking-wide text-sm transition-colors duration-300">
+        {title}
+      </h3>
+    </div>
+  ))}
+</div>
       </div>
     </section>
   );

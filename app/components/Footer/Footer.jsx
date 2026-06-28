@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -39,7 +38,7 @@ export default function Footer() {
         <div className="absolute bottom-0 right-0 w-72 h-72 bg-[#fd0014]/10 blur-3xl rounded-full"></div>
       </div>
 
-      <div className="relative  mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div className="relative mx-auto px-4 sm:px-6 lg:px-8 py-14">
         {/* Top Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 border-b border-white/10 pb-10">
           
@@ -117,12 +116,19 @@ export default function Footer() {
                 </a>
               </div>
 
-              {/* Address */}
+              {/* Address - Now clickable */}
               <div className="flex items-start gap-3">
                 <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#fd0014] shrink-0">
                   <FaMapMarkerAlt className="w-4 h-4" />
                 </div>
-                <p className="leading-6">{CONTACT_INFO.location}</p>
+                <a
+                  href={CONTACT_INFO.mapHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors leading-6 cursor-pointer hover:underline"
+                >
+                  {CONTACT_INFO.location}
+                </a>
               </div>
             </div>
           </div>

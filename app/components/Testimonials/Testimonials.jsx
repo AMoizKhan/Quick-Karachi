@@ -53,7 +53,7 @@ export default function Testimonials() {
 
   return (
     <section className="w-full py-12 md:py-16 bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h4 className="text-sm md:text-base font-semibold uppercase tracking-widest text-[#fd0014] mb-3">
             Testimonials
@@ -68,9 +68,9 @@ export default function Testimonials() {
             {duplicatedTestimonials.map((item, index) => (
               <article
                 key={index}
-                className="w-[280px] sm:w-[320px] md:w-[360px] flex-shrink-0 bg-red-600 rounded-2xl p-6 sm:p-8 shadow-sm"
+                className="w-[280px] sm:w-[320px] md:w-[360px] flex-shrink-0 border-2 border-red-600 rounded-2xl p-6 sm:p-8 shadow-sm"
               >
-                <FaQuoteLeft className="w-8 h-8 text-white mb-4" />
+                <FaQuoteLeft className="w-8 h-8 text-red-600 mb-4" />
 
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, starIndex) => (
@@ -81,11 +81,11 @@ export default function Testimonials() {
                   ))}
                 </div>
 
-                <p className="text-white leading-7 mb-6">{item.quote}</p>
+                <p className="text-black leading-7 mb-6">{item.quote}</p>
 
                 <div>
-                  <h3 className="font-bold text-white">{item.name}</h3>
-                  <p className="text-sm text-red-100">{item.role}</p>
+                  <h3 className="font-bold text-black">{item.name}</h3>
+                  <p className="text-sm text-red-600">{item.role}</p>
                 </div>
               </article>
             ))}

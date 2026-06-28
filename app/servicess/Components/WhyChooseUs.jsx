@@ -1,3 +1,4 @@
+"use client";
 import {
   FaShieldAlt,
   FaUsers,
@@ -6,14 +7,33 @@ import {
   FaTags,
   FaCheckCircle,
 } from "react-icons/fa";
+import Image from "next/image";
 
 const reasons = [
-  { title: "Reliable & Professional", icon: FaCheckCircle },
-  { title: "Experienced Team", icon: FaUsers },
-  { title: "Safety Focused", icon: FaShieldAlt },
-  { title: "Timely Service", icon: FaClock },
-  { title: "Customer Centric", icon: FaHeart },
-  { title: "Competitive Pricing", icon: FaTags },
+  {
+    title: "Reliable & Professional",
+    icon: "/newicons/driver.png",
+  },
+  {
+    title: "Experienced Team",
+    icon: "/newicons/meeting.png",
+  },
+  {
+    title: "Safety Focused",
+    icon: "/newicons/road-trip.png",
+  },
+  {
+    title: "Timely Service",
+    icon: "/newicons/speed.png",
+  },
+  {
+    title: "Customer Centric",
+    icon: "/newicons/help-desk.png",
+  },
+  {
+    title: "Competitive Pricing",
+    icon: "/newicons/tag.png",
+  },
 ];
 
 export default function WhyChooseUs() {
@@ -35,16 +55,22 @@ export default function WhyChooseUs() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {reasons.map(({ title, icon: Icon }) => (
+          {reasons.map(({ title, icon }) => (
             <div
               key={title}
               data-reveal-card
-              className="group flex items-center gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm hover:bg-red-600 active:bg-red-600 hover:shadow-md transition-all duration-300"
+              className="group flex items-center gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm hover:border-red-600 hover:shadow-md transition-all duration-300"
             >
-              <div className="w-12 h-12 rounded-full bg-[#fd0014] flex items-center justify-center shrink-0 transition-colors duration-300 group-hover:bg-white group-active:bg-white group-[.in-view]:bg-white">
-                <Icon className="w-5 h-5 text-white transition-colors duration-300 group-hover:text-[#fd0014] group-active:text-[#fd0014] group-[.in-view]:text-[#fd0014]" />
+              <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0 transition-colors duration-300">
+                <Image
+                  src={icon}
+                  alt={title}
+                  width={40}
+                  height={40}
+                  className="w-5 h-5 object-contain"
+                />
               </div>
-              <h3 className="font-semibold text-gray-900 transition-colors duration-300 group-hover:text-white group-active:text-white">
+              <h3 className="font-semibold text-gray-900 transition-colors duration-300">
                 {title}
               </h3>
             </div>

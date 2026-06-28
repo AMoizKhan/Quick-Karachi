@@ -36,7 +36,6 @@
 //           </div>
 //         </div>
 
-
 //         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 //           {leaders.map((leader) => (
 //             <article
@@ -109,28 +108,28 @@ export default function Leadership() {
           {leaders.map((leader) => (
             <article
               key={leader.name}
-              className="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm text-center hover:bg-red-600 hover:shadow-md transition-all duration-300"
+              className="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm text-center hover:border-red-600 hover:shadow-md transition-all duration-300"
             >
               {/* Image */}
-              <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-5 border-4 border-[#fd0014]">
+              <div className="w-40 h-40 rounded-full overflow-hidden mx-auto mb-5 border-4 border-[#fd0014]">
                 <Image
                   src={leader.image}
                   alt={leader.name}
-                  width={96}
-                  height={96}
+                  width={160}
+                  height={160}
                   className="w-full h-full object-cover"
                 />
               </div>
 
-              <p className="text-sm font-semibold uppercase tracking-widest text-[#fd0014] mb-2 transition-colors duration-300 group-hover:text-white">
+              <p className="text-sm font-semibold uppercase tracking-widest text-[#fd0014] mb-2 transition-colors duration-300 group-hover:text-black">
                 {leader.role}
               </p>
 
-              <h3 className="text-xl font-bold text-gray-900 mb-3 transition-colors duration-300 group-hover:text-white">
+              <h3 className="text-xl font-bold text-gray-900 mb-3 transition-colors duration-300 group-hover:text-black">
                 {leader.name}
               </h3>
 
-              <p className="text-gray-600 leading-7 transition-colors duration-300 group-hover:text-white">
+              <p className="text-gray-600 leading-7 transition-colors duration-300 group-hover:text-black">
                 {leader.description}
               </p>
             </article>

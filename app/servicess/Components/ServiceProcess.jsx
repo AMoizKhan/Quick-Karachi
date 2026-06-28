@@ -50,11 +50,6 @@ export default function ServiceProcess() {
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
               Booking a Ride Is Simple
             </h2>
-
-            {/* <p className="mt-5 max-w-2xl mx-auto text-gray-600 text-base md:text-lg leading-8">
-      From your first message to the final drop-off, we keep every step quick,
-      clear, and stress-free.
-    </p> */}
           </div>
         </div>
 
@@ -63,18 +58,18 @@ export default function ServiceProcess() {
             <div
               key={number}
               data-reveal-card
-              className="group relative bg-white rounded-2xl p-6 md:p-8 border border-gray-100 shadow-sm hover:shadow-md hover:bg-red-600 active:bg-red-600 transition-all duration-300"
+              className="group relative bg-white rounded-2xl p-6 md:p-8 border border-gray-100 shadow-sm hover:border-red-600 hover:shadow-md transition-all duration-300"
             >
-              <span className="absolute top-5 right-6 text-4xl md:text-5xl font-bold text-gray-100 select-none transition-colors duration-300 group-hover:text-white group-active:text-white">
+              <span className="absolute top-5 right-6 text-4xl md:text-5xl font-bold text-gray-100 select-none transition-colors duration-300 group-hover:text-red-600">
                 {number}
               </span>
-              <div className="relative w-14 h-14 rounded-full bg-[#fd0014]/10 flex items-center justify-center mb-5 transition-colors duration-300 group-hover:bg-white group-active:bg-white group-[.in-view]:bg-white">
-                <Icon className="w-6 h-6 text-[#fd0014]" />
+              <div className="relative w-14 h-14 rounded-full  flex items-center justify-center mb-5 transition-colors duration-300">
+                <Icon className="w-6 h-20 text-[#fd0014] transition-colors duration-300" />
               </div>
-              <h3 className="relative text-xl font-bold text-gray-900 mb-3 transition-colors duration-300 group-hover:text-white group-active:text-white">
+              <h3 className="relative text-xl font-bold text-gray-900 mb-3 transition-colors duration-300">
                 {title}
               </h3>
-              <p className="relative text-gray-600 leading-7 text-sm md:text-base transition-colors duration-300 group-hover:text-white group-active:text-white">
+              <p className="relative text-gray-600 leading-7 text-sm md:text-base transition-colors duration-300">
                 {description}
               </p>
             </div>

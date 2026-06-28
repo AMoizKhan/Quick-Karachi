@@ -7,6 +7,7 @@ import WhoWeAre from "./Components/WhoWeAre";
 import MissionVision from "./Components/MissionVision";
 import OurPromises from "./Components/OurPromises";
 import Leadership from "./Components/Leadership";
+import OurStory from "./Components/ourstory";
 
 export default function AboutPage() {
   return (
@@ -15,6 +16,7 @@ export default function AboutPage() {
       <AboutHero />
       <Leadership />
       <AboutIntro />
+      <OurStory/>
       <WhoWeAre />
       <MissionVision />
       <OurPromises />

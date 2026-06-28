@@ -8,7 +8,7 @@ const rides = [
     title: "Economy Cars",
     icon: "/icons/economy.png",
     image: "/images/alto.png",
-    bg: "#fd0014",
+    bg: "transparent",
 
     width: "w-[270px] sm:w-[260px] lg:w-[400px]",
     bottom: "-bottom-2 sm:-bottom-3 lg:-bottom-4",
@@ -19,7 +19,7 @@ const rides = [
     title: "Standard Cars",
     icon: "/icons/standard.png",
     image: "/images/civic1.png",
-    bg: "#fd0014",
+    bg: "transparent",
 
     width: "w-[240px] sm:w-[280px] lg:w-[430px]",
     bottom: "-bottom-2 sm:-bottom-4 lg:-bottom-6",
@@ -30,7 +30,7 @@ const rides = [
     title: "SUVs",
     icon: "/icons/suv.png",
     image: "/images/tucso1.png",
-    bg: "#fd0014",
+    bg: "transparent",
 
     width: "w-[230px] sm:w-[270px] lg:w-[390px]",
     bottom: "-bottom-6 sm:-bottom-8 lg:-bottom-20",
@@ -41,7 +41,7 @@ const rides = [
     title: "Leisure & Events",
     icon: "/icons/placeholder.svg",
     image: "/images/camry.png",
-    bg: "#fd0014",
+    bg: "transparent",
 
     width: "w-[350px] sm:w-[340px] lg:w-[600px]",
     bottom: "-bottom-6 sm:-bottom-8 lg:-bottom-20",
@@ -71,7 +71,7 @@ export default function ChooseRide() {
           {rides.map((ride) => (
             <div
               key={ride.id}
-              className="relative overflow-visible rounded-2xl min-h-[230px] sm:min-h-[250px] flex items-center"
+              className="relative overflow-visible rounded-2xl min-h-[230px] sm:min-h-[250px] flex items-center border-2 border-red-600"
               style={{ backgroundColor: ride.bg }}
             >
               {/* Left Content */}
@@ -97,13 +97,13 @@ export default function ChooseRide() {
                   />
                 </div>
 
-                <h3 className="text-xl sm:text-2xl font-bold mb-5 sm:mb-6 leading-snug">
+                <h3 className="text-xl sm:text-2xl font-bold mb-5 sm:mb-6 leading-snug text-black">
                   {ride.title}
                 </h3>
 
                 <Link
                   href="/contact-us"
-                  className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white px-4 py-2 rounded-md text-sm font-medium transition"
+                  className="inline-flex items-center gap-2 bg-white hover:bg-red-50 border-2 border-red-600 text-red-600 px-4 py-2 rounded-md text-sm font-medium transition"
                 >
                   View Vehicles
                   <span>→</span>

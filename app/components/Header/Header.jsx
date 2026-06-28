@@ -5,6 +5,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { CONTACT_INFO } from "../../config/contactConfig";
 
 const navLinks = [
@@ -16,6 +17,7 @@ const navLinks = [
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="w-full bg-white shadow-sm sticky top-0 z-50">
@@ -35,7 +37,7 @@ export default function Header() {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
+        {/* <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <Link
               key={link.label}
@@ -46,7 +48,28 @@ export default function Header() {
               <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] bg-red-600 transition-all duration-200 group-hover:w-full" />
             </Link>
           ))}
-        </nav>
+        </nav> */}
+        <nav className="hidden md:flex items-center gap-8">
+  {navLinks.map((link) => {
+    const isActive = pathname === link.href;
+
+    return (
+      <Link
+        key={link.label}
+        href={link.href}
+        className={`relative group px-4 py-2 rounded-md text-[17px] font-extrabold transition-all duration-200 ${
+          isActive
+            ? "bg-red-600 text-white"
+            : "text-gray-700 hover:text-red-600"
+        }`}
+      >
+        {link.label}
+
+        <span className="absolute -bottom-1 left-0 w-0 h-[1.5px] bg-red-600 transition-all duration-200 group-hover:w-full" />
+      </Link>
+    );
+  })}
+</nav>
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
@@ -93,7 +116,7 @@ export default function Header() {
           isMenuOpen ? "max-h-96" : "max-h-0"
         }`}
       >
-        <nav className="px-4 sm:px-6 py-4 flex flex-col gap-1">
+        {/* <nav className="px-4 sm:px-6 py-4 flex flex-col gap-1">
           {navLinks.map((link) => (
             <Link
               key={link.label}
@@ -115,7 +138,43 @@ export default function Header() {
             <Image src="/images/whatsapp.svg" alt="WhatsApp" width={16} height={16} />
             Book Now
           </a>
-        </nav>
+        </nav> */}
+        <nav className="px-4 sm:px-6 py-4 flex flex-col gap-1">
+  {navLinks.map((link) => {
+    const isActive = pathname === link.href;
+
+    return (
+      <Link
+        key={link.label}
+        href={link.href}
+        onClick={() => setIsMenuOpen(false)}
+        className={`py-2 px-3 rounded-md text-base font-bold transition-colors duration-200 ${
+          isActive
+            ? "bg-red-600 text-white"
+            : "text-gray-700 hover:bg-red-50 hover:text-red-600"
+        }`}
+      >
+        {link.label}
+      </Link>
+    );
+  })}
+
+  <a
+    href={CONTACT_INFO.whatsappHref}
+    target="_blank"
+    rel="noopener noreferrer"
+    onClick={() => setIsMenuOpen(false)}
+    className="mt-3 flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white text-sm font-semibold px-4 py-3 rounded transition-colors duration-200 animate-whatsappPulse"
+  >
+    <Image
+      src="/images/whatsapp.svg"
+      alt="WhatsApp"
+      width={16}
+      height={16}
+    />
+    Book Now
+  </a>
+</nav>
       </div>
     </header>
   );
