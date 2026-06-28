@@ -9,13 +9,13 @@ const services = [
     title: "Corporate Transfers",
     description:
       "Travel with business associates and VIP clients in style with our premium executive car rental service in Karachi.",
-    icon: "/newicons/meeting.png",
+    icon: "/newicons/person.png",
   },
   {
     title: "Weddings",
     description:
       "Make your special day unforgettable with our luxury wedding transportation services.",
-    icon: "/newicons/road-trip.png",
+    icon: "/newicons/wedding-car.png",
   },
   {
     title: "Car With Driver",
@@ -39,7 +39,7 @@ const services = [
     title: "Easy Booking",
     description:
       "Book your ride within minutes through WhatsApp or a simple phone call with instant confirmation.",
-    icon: "/newicons/driver.png",
+    icon: "/newicons/taxi.png",
   },
   {
     title: "Family Trips",
@@ -51,13 +51,13 @@ const services = [
     title: "Women-Only Ride Service",
     description:
       "Safe and reliable transportation designed to provide women with peace of mind while traveling.",
-    icon: "/newicons/sports-car.png",
+    icon: "/newicons/drive.png",
   },
   {
     title: "Daily Ride Service",
     description:
       "Reliable transportation for office commutes, school pickups, airport transfers, and everyday travel.",
-    icon: "/newicons/taxi.png",
+    icon: "/newicons/car-sharing  .png",
   },
 ];
 

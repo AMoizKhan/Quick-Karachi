@@ -108,14 +108,14 @@ const steps = [
     title: "Enjoy the Journey",
     description:
       "A verified driver picks you up on time in a clean, comfortable, well-maintained vehicle.",
-    icon: "/newicons/road-trip.png",
+    icon: "/newicons/enjoy.png",
   },
   {
     number: "04",
     title: "Rate & Repeat",
     description:
       "Share your feedback and unlock loyalty rewards on every ride you take with QKTS.",
-    icon: "/newicons/star.png",
+    icon: "/newicons/good-feedback.png",
   },
 ];
 
@@ -148,13 +148,13 @@ export default function ServiceProcess() {
                 {number}
               </span>
 
-              <div className="relative w-14 h-14 flex items-center justify-center mb-5">
+              <div className="relative w-20 h-20 flex items-center justify-center mb-5">
                 <Image
                   src={icon}
                   alt={title}
-                  width={56}
-                  height={56}
-                  className="object-contain"
+                  width={70}
+                  height={70}
+                  className="w-16 h-16 object-contain"
                 />
               </div>
 

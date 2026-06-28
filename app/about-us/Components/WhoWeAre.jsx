@@ -14,7 +14,7 @@ const cards = [
     id: "safety-card",
     label: "Safety First",
     text: "We prioritize your safety on every ride — from background-checked drivers to real-time trip tracking and 24/7 support.",
-    icon: "/newicons/taxi-driver.png",
+    icon: "/newicons/seat-belt.png",
   },
 ];
 // ─── Main Component ───────────────────────────────────────────────────────────
@@ -58,13 +58,13 @@ export default function WhoWeAre() {
                   className="group bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:border-red-600 active:bg-red-600 hover:shadow-md transition-all duration-300"
                 >
                   {/* Icon circle */}
-                  <div className="w-14 h-14 flex items-center justify-center mb-4 transition-colors duration-300 group-hover:bg-transparent group-active:bg-transparent">
+                  <div className="w-20 h-20 flex items-center justify-center mb-4 transition-colors duration-300 group-hover:bg-transparent group-active:bg-transparent">
                     <Image
                       src={card.icon}
                       alt={card.label}
-                      width={30}
-                      height={30}
-                      className="w-8 h-8 object-contain"
+                      width={70}
+                      height={70}
+                      className="w-16 h-16 object-contain"
                     />
                   </div>
 

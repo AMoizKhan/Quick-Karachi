@@ -5,11 +5,11 @@ import Image from "next/image";
 const promises = [
   {
     title: "Safe & Reliable Rides",
-    image: "/newicons/security.png",
+    image: "/newicons/trustworthiness.png",
   },
   {
     title: "Professional Service",
-    image: "/newicons/booking.png",
+    image: "/newicons/tech-support.png",
   },
   {
     title: "Comfortable Vehicles",
@@ -17,7 +17,7 @@ const promises = [
   },
   {
     title: "On-Time Transportation",
-    image: "/newicons/taxi.png",
+    image: "/newicons/travel.png",
   },
   {
     title: "Easy WhatsApp Booking",
@@ -25,7 +25,7 @@ const promises = [
   },
   {
     title: "Karachi & Interior Sindh",
-    image: "/newicons/location.png",
+    image: "/newicons/route.png",
   },
 ];
 
@@ -54,13 +54,13 @@ export default function OurPromises() {
               data-reveal-card
               className="group bg-white rounded-xl p-6 border border-gray-100 shadow-sm text-center hover:border-red-600 hover:shadow-md transition-all duration-300"
             >
-              <div className="w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-transform duration-300 group-hover:scale-110">
+              <div className="w-20 h-20 flex items-center justify-center mx-auto mb-4 transition-transform duration-300 group-hover:scale-110">
                 <Image
                   src={image}
                   alt={title}
-                  width={64}
-                  height={64}
-                  className="object-contain"
+                  width={70}
+                  height={70}
+                  className="w-16 h-16 object-contain"
                 />
               </div>
 

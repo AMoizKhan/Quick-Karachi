@@ -14,13 +14,13 @@ export default function MissionVision() {
             data-reveal-card
             className="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:border-red-600 hover:shadow-md transition-all duration-300"
           >
-            <div className="w-16 h-16  flex items-center justify-center mb-5 overflow-hidden">
+            <div className="w-20 h-20  flex items-center justify-center mb-5 overflow-hidden">
               <Image
-                src="/newicons/target.png"
+                src="/newicons/business.png"
                 alt="Mission"
-                width={64}
-                height={64}
-                className="object-contain"
+                width={70}
+                height={70}
+                className="w-16 h-16 object-contain"
               />
             </div>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#fd0014] mb-2 transition-colors duration-300">
@@ -43,13 +43,13 @@ export default function MissionVision() {
             data-reveal-card
             className="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:border-red-600 hover:shadow-md transition-all duration-300"
           >
-            <div className="w-16 h-16 rounded-full flex items-center justify-center mb-5 overflow-hidden">
+            <div className="w-20 h-20 rounded-full flex items-center justify-center mb-5 overflow-hidden">
               <Image
                 src="/newicons/vision.png"
                 alt="Vision"
-                width={64}
-                height={64}
-                className="object-contain"
+                width={70}
+                height={70}
+                className="w-16 h-16 object-contain"
               />
             </div>
 

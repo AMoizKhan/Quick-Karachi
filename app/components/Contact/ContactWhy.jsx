@@ -9,7 +9,7 @@ const reasons = [
   },
   {
     text: "Verified and trusted service",
-    icon: "/newicons/verified.png",
+    icon: "/newicons/cash-machine.png",
   },
   {
     text: "Affordable monthly plans and flexible ride options",
@@ -17,11 +17,11 @@ const reasons = [
   },
   {
     text: "Safe travel for students, women, professionals, and families",
-    icon: "/newicons/road-trip.png",
+    icon: "/newicons/travel-insurance.png",
   },
   {
     text: "Customer-first support built around Karachi's real commuting needs",
-    icon: "/newicons/meeting.png",
+    icon: "/newicons/customer-service.png",
   },
 ];
 
@@ -52,13 +52,13 @@ export default function ContactWhy() {
             {/* <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
               <Icon width={28} height={28} color="#fd0014" />
             </div> */}
-            <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
+            <div className="w-20 h-20 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
               <Image
                 src={icon}
                 alt={text}
-                width={32}
-                height={32}
-                className="object-contain"
+                width={70}
+                height={70}
+                className="w-16 h-16 object-contain"
               />
             </div>
 

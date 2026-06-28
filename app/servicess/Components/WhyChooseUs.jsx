@@ -12,15 +12,15 @@ import Image from "next/image";
 const reasons = [
   {
     title: "Reliable & Professional",
-    icon: "/newicons/driver.png",
+    icon: "/newicons/professionalism.png",
   },
   {
     title: "Experienced Team",
-    icon: "/newicons/meeting.png",
+    icon: "/newicons/discussion.png",
   },
   {
     title: "Safety Focused",
-    icon: "/newicons/road-trip.png",
+    icon: "/newicons/requirements.png",
   },
   {
     title: "Timely Service",
@@ -28,7 +28,7 @@ const reasons = [
   },
   {
     title: "Customer Centric",
-    icon: "/newicons/help-desk.png",
+    icon: "/newicons/demographic.png",
   },
   {
     title: "Competitive Pricing",
@@ -61,13 +61,13 @@ export default function WhyChooseUs() {
               data-reveal-card
               className="group flex items-center gap-4 p-6 rounded-xl bg-white border border-gray-100 shadow-sm hover:border-red-600 hover:shadow-md transition-all duration-300"
             >
-              <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0 transition-colors duration-300">
+              <div className="w-20 h-20 rounded-full flex items-center justify-center shrink-0 transition-colors duration-300">
                 <Image
                   src={icon}
                   alt={title}
-                  width={56}
-                  height={56}
-                  className="w-20 h-20 object-contain"
+                  width={70}
+                  height={70}
+                  className="w-16 h-16 object-contain"
                 />
               </div>
               <h3 className="font-semibold text-gray-900 transition-colors duration-300">

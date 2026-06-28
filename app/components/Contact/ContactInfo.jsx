@@ -45,7 +45,7 @@ const contactItems = [
     title: "Location",
     value: CONTACT_INFO.location,
     href: CONTACT_INFO.mapHref,
-    icon: "/newicons/location.png",
+    icon: "/newicons/development.png",
   },
 ];
 
@@ -62,13 +62,13 @@ export default function ContactInfo() {
             {/* <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
               <Icon className="w-5 h-5 text-[#fd0014] transition-colors duration-300" />
             </div> */}
-            <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
+            <div className="w-20 h-20 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
               <Image
                 src={item.icon}
                 alt={item.title}
-                width={28}
-                height={28}
-                className="object-contain"
+                width={70}
+                height={70}
+                className="w-16 h-16 object-contain"
               />
             </div>
             <div>

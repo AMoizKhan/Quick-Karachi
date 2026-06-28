@@ -8,42 +8,42 @@ const services = [
     description:
       "Reliable point-to-point travel for students, professionals, and families who need a comfortable and timely ride across Karachi.",
     bestFor: "Best for: university, office, hospital, and routine city travel.",
-    icon: "/newicons/road-trip.png",
+    icon: "/newicons/come-to-see.png",
   },
   {
     title: "Women-Only Ride Service",
     description:
       "A dedicated service for women who want extra comfort and confidence during travel, especially for early-morning and late-night trips.",
     bestFor: "Best for: women commuters, students, and working professionals.",
-    icon: "/newicons/sports-car.png",
+    icon: "/newicons/psychologist.png",
   },
   {
     title: "Family Track Rides",
     description:
       "A smart travel option for families who want to keep track of their loved ones during the journey.",
     bestFor: "Best for: children, teens, and family members traveling alone.",
-    icon: "/newicons/taxi-driver.png",
+    icon: "/newicons/family.png",
   },
   {
     title: "Easy Booking Options",
     description:
       "Book your ride through WhatsApp, social media, SMS, and our upcoming mobile app.",
     bestFor: "Best for: customers who want quick and convenient booking.",
-    icon: "/newicons/quick-response.png",
+    icon: "/newicons/smartphone.png",
   },
   {
     title: "Flexible Payment Options",
     description:
       "Pay using cash, mobile wallets, or bank transfer for a smooth and convenient experience.",
     bestFor: "Best for: customers who prefer secure and easy payment methods.",
-    icon: "/newicons/cashless-payment.png",
+    icon: "/newicons/strategic-partnerships.png",
   },
   {
     title: "Subscription & Loyalty Plans",
     description:
       "Enjoy value-based travel with monthly packages, ride bundles, referral rewards, and special discounts for loyal customers.",
     bestFor: "",
-    icon: "/newicons/customer-loyalty.png",
+    icon: "/newicons/transport.png",
   },
 ];
 
@@ -106,14 +106,14 @@ export default function OurServices() {
               `}
             >
               {/* Icon container - transparent background */}
-              <div className="w-14 h-14 flex items-center justify-center mb-5">
+              <div className="w-20 h-20 flex items-center justify-center mb-5">
                 <span className="flex items-center justify-center">
                   <Image
                     src={service.icon}
                     alt={service.title}
-                    width={40}
-                    height={40}
-                    className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110"
+                    width={70}
+                    height={70}
+                    className="w-16 h-16 object-contain transition-transform duration-300 group-hover:scale-110"
                   />
                 </span>
               </div>
