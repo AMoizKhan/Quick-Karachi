@@ -179,7 +179,7 @@ export default function Hero() {
     <section
       className="relative w-full overflow-hidden min-h-[560px] sm:min-h-[650px] lg:min-h-[700px] flex items-center bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: "url('/images/hero-bg.jpg')",
+        backgroundImage: "url('/images/bg-2.jpeg')",
       }}
     >
       {slides.map((slide, index) => (

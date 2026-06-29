@@ -136,10 +136,10 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="pt-6 flex flex-col md:flex-row items-end justify-between gap-5">
-          <p className="text-sm text-gray-500 text-start md:text-left">
-            &copy; {new Date().getFullYear()} Quick Karachi Transportation
-            Service. All rights reserved.
-          </p>
+        <p className="text-sm text-gray-500 text-left md:text-center">
+  &copy; {new Date().getFullYear()} Quick Karachi Transportation
+  Service. All rights reserved.
+</p>
 
           {/* Social Icons */}
           <div className="flex items-center gap-3">
