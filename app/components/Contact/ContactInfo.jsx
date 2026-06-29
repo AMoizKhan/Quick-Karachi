@@ -45,7 +45,7 @@ const contactItems = [
     title: "Location",
     value: CONTACT_INFO.location,
     href: CONTACT_INFO.mapHref,
-    icon: "/newicons/development.png",
+    icon: "/newicons/vehicle-tracking.png",
   },
 ];
 

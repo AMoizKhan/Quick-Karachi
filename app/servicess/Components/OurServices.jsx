@@ -8,7 +8,7 @@ const services = [
     description:
       "Reliable point-to-point travel for students, professionals, and families who need a comfortable and timely ride across Karachi.",
     bestFor: "Best for: university, office, hospital, and routine city travel.",
-    icon: "/newicons/come-to-see.png",
+    icon: "/newicons/meeting.png",
   },
   {
     title: "Women-Only Ride Service",
@@ -36,14 +36,14 @@ const services = [
     description:
       "Pay using cash, mobile wallets, or bank transfer for a smooth and convenient experience.",
     bestFor: "Best for: customers who prefer secure and easy payment methods.",
-    icon: "/newicons/strategic-partnerships.png",
+    icon: "/newicons/payment.png",
   },
   {
     title: "Subscription & Loyalty Plans",
     description:
       "Enjoy value-based travel with monthly packages, ride bundles, referral rewards, and special discounts for loyal customers.",
     bestFor: "",
-    icon: "/newicons/transport.png",
+    icon: "/newicons/strategic-partnerships.png",
   },
 ];
 

@@ -101,7 +101,7 @@ const steps = [
     title: "Confirm Your Ride",
     description:
       "Our team shares the fare and driver details, then confirms your booking in minutes.",
-    icon: "/newicons/meeting.png",
+    icon: "/newicons/transport.png",
   },
   {
     number: "03",

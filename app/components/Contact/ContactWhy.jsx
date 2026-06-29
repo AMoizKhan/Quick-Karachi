@@ -9,11 +9,11 @@ const reasons = [
   },
   {
     text: "Verified and trusted service",
-    icon: "/newicons/cash-machine.png",
+    icon: "/newicons/development.png",
   },
   {
     text: "Affordable monthly plans and flexible ride options",
-    icon: "/newicons/ruppe.png",
+    icon: "/newicons/cash-machine.png",
   },
   {
     text: "Safe travel for students, women, professionals, and families",
