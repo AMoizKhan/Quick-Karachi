@@ -57,7 +57,7 @@ const services = [
     title: "Daily Ride Service",
     description:
       "Reliable transportation for office commutes, school pickups, airport transfers, and everyday travel.",
-    icon: "/newicons/car-sharing  .png",
+    icon: "/newicons/car-sharing.png",
   },
 ];
 
