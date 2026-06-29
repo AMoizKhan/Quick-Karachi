@@ -5,10 +5,10 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function AboutHero() {
   return (
-    <section className="relative w-full min-h-[60vh] flex items-center">
+    <section className="relative w-full min-h-[100vh] flex items-center">
       {/* Background */}
       <Image
-        src="/images/about.jpg"
+        src="/images/bg-6.jpeg"
         alt="About Us Hero Background"
         fill
         priority

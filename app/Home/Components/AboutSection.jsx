@@ -5,7 +5,6 @@ export default function AboutSection() {
   return (
     <section className="w-full py-16 bg-white">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
-
         {/* Heading */}
         <div className="flex justify-center mb-16">
           <div className="relative inline-block px-8 py-4">
@@ -20,7 +19,6 @@ export default function AboutSection() {
 
         {/* Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-14">
-
           {/* Left */}
           <div>
             <h3 className="text-3xl lg:text-5xl text-black font-bold leading-tight mb-6">
@@ -32,9 +30,9 @@ export default function AboutSection() {
             <p className="text-gray-600 text-base md:text-lg leading-8 mb-5">
               Quick Karachi Transportation Service is committed to providing
               reliable, comfortable, and affordable travel solutions for
-              individuals, families, and businesses. We focus on delivering
-              safe rides, professional drivers, and a smooth booking experience
-              for every customer.
+              individuals, families, and businesses. We focus on delivering safe
+              rides, professional drivers, and a smooth booking experience for
+              every customer.
             </p>
 
             <p className="text-gray-600 text-base md:text-lg leading-8 mb-8">
@@ -53,15 +51,14 @@ export default function AboutSection() {
           </div>
 
           {/* Right */}
-          <div className="relative h-[320px] md:h-[500px] rounded-2xl overflow-hidden shadow-xl">
-            <Image
-              src="/images/bg-6.jpeg"
-              alt="About Quick Karachi"
-              fill
-              className="object-cover"
-            />
-          </div>
-
+         <div className="hidden lg:block relative h-[500px] rounded-2xl overflow-hidden">
+  <Image
+    src="/images/about2.png"
+    alt="About Quick Karachi"
+    fill
+    className="object-cover"
+  />
+</div>
         </div>
       </div>
     </section>

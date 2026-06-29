@@ -23,9 +23,9 @@ export default function MissionVision() {
                 className="w-16 h-16 object-contain"
               />
             </div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#fd0014] mb-2 transition-colors duration-300">
+            {/* <p className="text-xs font-semibold uppercase tracking-widest text-[#fd0014] mb-2 transition-colors duration-300">
               Our Purpose
-            </p>
+            </p> */}
 
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transition-colors duration-300">
               Our Mission
@@ -53,9 +53,9 @@ export default function MissionVision() {
               />
             </div>
 
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#fd0014] mb-2 transition-colors duration-300">
+            {/* <p className="text-xs font-semibold uppercase tracking-widest text-[#fd0014] mb-2 transition-colors duration-300">
               Our Future
-            </p>
+            </p> */}
 
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 transition-colors duration-300">
               Our Vision
