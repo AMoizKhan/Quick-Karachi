@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-
 const rides = [
   {
     id: 1,
@@ -101,8 +100,15 @@ export default function ChooseRide() {
                   {ride.title}
                 </h3>
 
-                <Link
+                {/* <Link
                   href="/contact-us"
+                  className="inline-flex items-center gap-2 bg-white hover:bg-red-50 border-2 border-red-600 text-red-600 px-4 py-2 rounded-md text-sm font-medium transition"
+                >
+                  View Vehicles
+                  <span>→</span>
+                </Link> */}
+                <Link
+                  href={`/vehicles?category=${encodeURIComponent(ride.title)}`}
                   className="inline-flex items-center gap-2 bg-white hover:bg-red-50 border-2 border-red-600 text-red-600 px-4 py-2 rounded-md text-sm font-medium transition"
                 >
                   View Vehicles
