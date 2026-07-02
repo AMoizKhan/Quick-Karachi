@@ -1,11 +1,11 @@
 // app/vehicles/page.js
 import { Suspense } from "react";
 import VehiclesPageClient from "./Vehiclespageclient";
+import VehiclesHero from "./hero";
 import Header from "../components/Header/Header";
 import FAQs from "../components/FAQs/FAQs";
 import Testimonials from "../components/Testimonials/Testimonials";
 import Footer from "../components/Footer/Footer";
-import Hero from "../Home/Components/hero";
 
 export const metadata = {
   title: "Vehicles | QKTS - Quick Karachi Transportation Service",
@@ -24,7 +24,7 @@ export default function VehiclesPage() {
   return (
     <Suspense fallback={<VehiclesLoadingFallback />}>
       <Header />
-      <Hero />
+      <VehiclesHero />
       <VehiclesPageClient />
       <FAQs />
       <Testimonials />

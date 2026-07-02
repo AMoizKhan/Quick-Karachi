@@ -7,6 +7,7 @@ import Link from "next/link";
 import VehicleDetails from "../components/Categories of Car/Vehicledetails";
 import VehicleCard from "../components/Categories of Car/Vehiclecard";
 import { getCategoryMeta, getVehiclesByCategory } from "../data/vehicles";
+import VehiclesBanner from "./banner";
 // import VehicleCard from "@/components/VehicleCard";
 // import VehicleDetails from "@/components/VehicleDetails";
 // import { getVehiclesByCategory, getCategoryMeta } from "@/data/vehicles";
@@ -31,7 +32,7 @@ export default function VehiclesPageClient() {
   return (
     <main className="min-h-screen bg-white pb-20 ">
       {/* Header */}
-      <div className="border-b border-border bg-subtle">
+      <div className="border-b border-black/10 bg-white">
         <div className="mx-auto px-4 py-8 sm:px-6 lg:px-8">
           {/* <Link
             href="/"
@@ -39,10 +40,10 @@ export default function VehiclesPageClient() {
           >
             &larr; Back to Categories
           </Link> */}
-          <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-brand">
-            {categoryMeta?.tagline || "Vehicle Fleet"}
+          <p className="font-heading text-[11px] uppercase tracking-[0.18em] text-[#fd0014]">
+            {categoryMeta?.tagline }
           </p>
-          <h1 className="mt-1 font-display text-3xl font-semibold text-ink sm:text-4xl">
+          <h1 className="mt-1 font-heading text-3xl font-semibold text-black sm:text-4xl">
             {category || "All Vehicles"}
           </h1>
         </div>
@@ -50,13 +51,13 @@ export default function VehiclesPageClient() {
  
       <div className="mx-auto  px-4 pt-8 sm:px-6 lg:px-8">
         {categoryVehicles.length === 0 ? (
-          <div className="rounded-2xl bg-white p-10 text-center text-black ring-1 ring-border shadow-card">
-            <p className="text-ink">
+          <div className="rounded-2xl bg-white p-10 text-center text-black ring-1 ring-black/10 shadow-sm">
+            <p className="text-black">
               No vehicles found for this category yet.
             </p>
             <Link
               href="/"
-              className="mt-4 inline-block text-sm font-medium text-brand hover:underline"
+              className="mt-4 inline-block text-sm font-medium text-[#fd0014] hover:underline"
             >
               Browse other categories
             </Link>
@@ -80,6 +81,9 @@ export default function VehiclesPageClient() {
           </>
         )}
       </div>
+
+      {/* "Looking for a different vehicle?" CTA banner */}
+      <VehiclesBanner />
     </main>
   );
 }

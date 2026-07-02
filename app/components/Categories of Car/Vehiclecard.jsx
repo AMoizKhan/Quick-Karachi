@@ -10,7 +10,7 @@ export default function VehicleCard({ vehicle, isActive, onClick }) {
       className={[
         "group relative flex w-full flex-shrink-0 flex-col overflow-hidden rounded-xl text-left transition-all duration-300 sm:w-44",
         isActive
-          ? "ring-2 ring-[#C9A15C] shadow-[0_10px_30px_-10px_rgba(201,161,92,0.5)]"
+          ? "ring-2 ring-[#fd0014] shadow-[0_10px_30px_-10px_rgba(253,0,20,0.5)]"
           : "ring-1 ring-white/10 hover:ring-white/30",
       ].join(" ")}
     >
@@ -28,7 +28,7 @@ export default function VehicleCard({ vehicle, isActive, onClick }) {
         <div
           className={[
             "absolute inset-0 transition-opacity duration-300",
-            isActive ? "bg-[#C9A15C]/10" : "bg-[#14171C]/30 group-hover:bg-[#14171C]/10",
+            isActive ? "bg-[#fd0014]/10" : "bg-[#14171C]/30 group-hover:bg-[#14171C]/10",
           ].join(" ")}
         />
       </div>
@@ -47,13 +47,13 @@ export default function VehicleCard({ vehicle, isActive, onClick }) {
         >
           {vehicle.name}
         </span>
-        <span className="font-mono text-xs text-[#C9A15C]">
+        <span className="font-mono text-xs text-[#fd0014]">
           PKR {vehicle.pricePerDay.toLocaleString()}/day
         </span>
       </div>
 
       {isActive && (
-        <span className="absolute right-2 top-2 flex h-5 w-5 items-center justify-center rounded-full bg-[#C9A15C] text-[10px] font-bold text-[#14171C]">
+        <span className="absolute right-2 top-2 flex h-5 w-5 items-center justify-center rounded-full bg-[#fd0014] text-[10px] font-bold text-white">
           ✓
         </span>
       )}
