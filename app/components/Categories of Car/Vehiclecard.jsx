@@ -14,7 +14,7 @@ export default function VehicleCard({ vehicle, isActive, onClick }) {
           : "ring-1 ring-white/10 hover:ring-white/30",
       ].join(" ")}
     >
-      <div className="relative h-28 w-full overflow-hidden bg-[#1E2229] sm:h-30 lg:h-40">
+      <div className="relative h-32 w-full overflow-hidden bg-[#1E2229] sm:h-30 lg:h-50">
         <Image
           src={vehicle.image}
           alt={vehicle.name}
@@ -30,7 +30,7 @@ export default function VehicleCard({ vehicle, isActive, onClick }) {
             "absolute inset-0 transition-opacity duration-300",
             isActive
               ? "bg-[#fff ]/10"
-              : "bg-[#14171C]/30 group-hover:bg-[#14171C]/10",
+              : "bg-[#14171C]/30   group-hover:bg-[#14171C]/10",
           ].join(" ")}
         />
       </div>

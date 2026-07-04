@@ -65,7 +65,7 @@ export default function VehiclesPageClient() {
         ) : (
           <>
             {/* Vehicle selector row */}
-            <div className="mb-10 grid grid-cols-3 gap-4 sm:grid-cols-2 lg:grid-cols-10 xl:grid-cols-5">
+            <div className="mb-10 grid  grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-10 xl:grid-cols-5">
               {categoryVehicles.map((vehicle) => (
                 <VehicleCard
                   key={vehicle.id}
