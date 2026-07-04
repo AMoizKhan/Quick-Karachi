@@ -8,13 +8,13 @@ export default function VehicleCard({ vehicle, isActive, onClick }) {
       onClick={onClick}
       aria-pressed={isActive}
       className={[
-        "group relative flex w-full flex-shrink-0 flex-col overflow-hidden rounded-xl text-left transition-all duration-300 sm:w-44",
+        "group relative flex w-full  flex-col overflow-hidden rounded-xl text-left transition-all duration-300",
         isActive
           ? "ring-2 ring-[#fd0014] shadow-[0_10px_30px_-10px_rgba(253,0,20,0.5)]"
           : "ring-1 ring-white/10 hover:ring-white/30",
       ].join(" ")}
     >
-      <div className="relative h-28 w-full overflow-hidden bg-[#1E2229] sm:h-24">
+      <div className="relative h-28 w-full overflow-hidden bg-[#1E2229] sm:h-30 lg:h-40">
         <Image
           src={vehicle.image}
           alt={vehicle.name}
@@ -28,7 +28,9 @@ export default function VehicleCard({ vehicle, isActive, onClick }) {
         <div
           className={[
             "absolute inset-0 transition-opacity duration-300",
-            isActive ? "bg-[#fd0014]/10" : "bg-[#14171C]/30 group-hover:bg-[#14171C]/10",
+            isActive
+              ? "bg-[#fff ]/10"
+              : "bg-[#14171C]/30 group-hover:bg-[#14171C]/10",
           ].join(" ")}
         />
       </div>

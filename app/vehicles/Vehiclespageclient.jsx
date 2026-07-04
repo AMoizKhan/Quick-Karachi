@@ -15,10 +15,10 @@ import VehiclesBanner from "./banner";
 export default function VehiclesPageClient() {
   const searchParams = useSearchParams();
   const category = searchParams.get("category") || "";
- 
+
   const [categoryVehicles, setCategoryVehicles] = useState([]);
   const [selectedVehicle, setSelectedVehicle] = useState(null);
- 
+
   // Re-derive the vehicle list whenever the category in the URL changes,
   // and default-select the first vehicle in that list.
   useEffect(() => {
@@ -26,9 +26,9 @@ export default function VehiclesPageClient() {
     setCategoryVehicles(list);
     setSelectedVehicle(list.length > 0 ? list[0] : null);
   }, [category]);
- 
+
   const categoryMeta = getCategoryMeta(category);
- 
+
   return (
     <main className="min-h-screen bg-white pb-20 ">
       {/* Header */}
@@ -41,14 +41,14 @@ export default function VehiclesPageClient() {
             &larr; Back to Categories
           </Link> */}
           <p className="font-heading text-[11px] uppercase tracking-[0.18em] text-[#fd0014]">
-            {categoryMeta?.tagline }
+            {categoryMeta?.tagline}
           </p>
           <h1 className="mt-1 font-heading text-3xl font-semibold text-black sm:text-4xl">
             {category || "All Vehicles"}
           </h1>
         </div>
       </div>
- 
+
       <div className="mx-auto  px-4 pt-8 sm:px-6 lg:px-8">
         {categoryVehicles.length === 0 ? (
           <div className="rounded-2xl bg-white p-10 text-center text-black ring-1 ring-black/10 shadow-sm">
@@ -65,7 +65,7 @@ export default function VehiclesPageClient() {
         ) : (
           <>
             {/* Vehicle selector row */}
-            <div className="mb-10 flex gap-3 overflow-x-auto pb-2 sm:flex-wrap sm:overflow-visible">
+            <div className="mb-10 grid grid-cols-3 gap-4 sm:grid-cols-2 lg:grid-cols-10 xl:grid-cols-5">
               {categoryVehicles.map((vehicle) => (
                 <VehicleCard
                   key={vehicle.id}
@@ -75,7 +75,7 @@ export default function VehiclesPageClient() {
                 />
               ))}
             </div>
- 
+
             {/* Selected vehicle details */}
             <VehicleDetails vehicle={selectedVehicle} />
           </>

@@ -48,7 +48,7 @@ export default function VehicleDetails({ vehicle }) {
     { label: "Air Conditioning", value: <BooleanBadge value={vehicle.airConditioning} /> },
     { label: "Price Per Day", value: `PKR ${vehicle.pricePerDay.toLocaleString()}` },
     { label: "Maximum Rental Hours", value: `${vehicle.maxRentalHours} Hours` },
-    { label: "Fuel Policy", value: vehicle.fuelPolicy },
+    // { label: "Fuel Policy", value: vehicle.fuelPolicy },
     { label: "Description", value: vehicle.description },
     { label: "Pick & Drop Availability", value: <BooleanBadge value={vehicle.pickDrop} /> },
     { label: "Corporate Booking", value: <BooleanBadge value={vehicle.corporateBooking} /> },

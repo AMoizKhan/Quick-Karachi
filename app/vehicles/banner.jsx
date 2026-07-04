@@ -3,9 +3,9 @@ import { CONTACT_INFO } from "../config/contactConfig";
 
 export default function VehiclesBanner() {
   return (
-    <section className="w-full  md:py-20 bg-white">
+    <section className="w-full mt-8 sm:mt-10 md:mt-0 md:py-20  md:py-20 bg-white">
       <div className=" mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 py-12 sm:px-10 md:px-16 md:py-16">
+        <div className="relative  overflow-hidden rounded-3xl bg-gray-900 px-6 py-12 sm:px-10 md:px-16 md:py-16">
           {/* Glow accents */}
           <div className="pointer-events-none absolute -top-10 -left-10 w-60 h-60 bg-[#fd0014]/20 blur-3xl rounded-full" />
           <div className="pointer-events-none absolute -bottom-10 -right-10 w-60 h-60 bg-[#fd0014]/20 blur-3xl rounded-full" />
