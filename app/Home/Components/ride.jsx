@@ -5,7 +5,7 @@ const rides = [
   {
     id: 1,
     title: "Economy Cars",
-    icon: "/icons/ecomny1.jpeg",
+    icon: "/icons/vehicle.png",
     image: "/images/alto.png",
     bg: "transparent",
 
@@ -16,7 +16,7 @@ const rides = [
   {
     id: 2,
     title: "Standard Cars",
-    icon: "/icons/standard.png",
+    icon: "/icons/sports-car.png",
     image: "/images/civic1.png",
     bg: "transparent",
 
@@ -27,7 +27,7 @@ const rides = [
   {
     id: 3,
     title: "SUVs",
-    icon: "/icons/suv.png",
+    icon: "/icons/suvss.png",
     image: "/images/tucso1.png",
     bg: "transparent",
 
@@ -38,7 +38,7 @@ const rides = [
   {
     id: 4,
     title: "Leisure & Events",
-    icon: "/icons/placeholder.svg",
+    icon: "/icons/car.png",
     image: "/images/camry.png",
     bg: "transparent",
 
@@ -104,7 +104,7 @@ export default function ChooseRide() {
                   // className="text-xl sm:text-2xl md:text-[15px] lg:text-2xl font-bold mb-5 sm:mb-6 md:mb-4 leading-snug md:leading-6 text-black">
                   className="text-xl sm:text-2xl md:text-[15px] lg:text-2xl font-bold mb-5 sm:mb-6 md:mb-4 leading-snug md:leading-6 text-black md:-ml-4"
                 >
-                  {/* {ride.icon && (
+                  {ride.icon && (
                     <Image
                       src={ride.icon}
                       alt={ride.title}
@@ -112,7 +112,7 @@ export default function ChooseRide() {
                       height={50}
                       className="object-contain mr-2"
                     />
-                  )} */}
+                  )}
                   {ride.title}
                 </h3>
 

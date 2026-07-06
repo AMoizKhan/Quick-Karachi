@@ -5,12 +5,12 @@ import Link from "next/link";
 // ─── Services data ────────────────────────────────────────────────────────────
 
 const services = [
-  {
-    title: "Corporate Transfers",
-    description:
-      "Travel with business associates and VIP clients in style with our premium executive car rental service in Karachi.",
-    icon: "/newicons/person.png",
-  },
+  // {
+  //   title: "Corporate Transfers",
+  //   description:
+  //     "Travel with business associates and VIP clients in style with our premium executive car rental service in Karachi.",
+  //   icon: "/newicons/person.png",
+  // },
   {
     title: "Weddings",
     description:
@@ -18,16 +18,28 @@ const services = [
     icon: "/newicons/wedding-car.png",
   },
   {
+    title: "Airport Transfers",
+    description:
+      "Reliable airport transfers with on-time pickups and comfortable rides.",
+    icon: "/newicons/airport.png",
+  },
+  {
     title: "Car With Driver",
     description:
       "Enjoy a comfortable and stress-free journey with our experienced and professional drivers.",
     icon: "/newicons/taxi-driver.png",
   },
+  // {
+  //   title: "Subscription & Loyalty Plans",
+  //   description:
+  //     "Save more with our flexible monthly packages and exclusive loyalty rewards for regular customers.",
+  //   icon: "/newicons/customer-loyalty.png",
+  // },
   {
-    title: "Subscription & Loyalty Plans",
+    title: "Corporate Transfers",
     description:
-      "Save more with our flexible monthly packages and exclusive loyalty rewards for regular customers.",
-    icon: "/newicons/customer-loyalty.png",
+      "Travel with business associates and VIP clients in style with our premium executive car rental service in Karachi.",
+    icon: "/newicons/person.png",
   },
   {
     title: "Flexible Payment Options",
