@@ -23,7 +23,7 @@ const features = [
   },
   {
     id: 3,
-    icon: "/icons/vehicle.png",
+    icon: "/newicons/vehicle1.png",
     title: "Well Maintained Cars",
     desc: "Clean, comfortable and reliable vehicles for every trip.",
   },
