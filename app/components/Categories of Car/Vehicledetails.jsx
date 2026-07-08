@@ -99,8 +99,8 @@ export default function VehicleDetails({ vehicle }) {
 
       {/* Spec sheet */}
       <div className="lg:col-span-2">
-        <div className="overflow-hidden rounded-2xl border-2 border-red-600 bg-white shadow-[0_10px_30px_-12px_rgba(220,38,38,0.25)]">
-          <div className="border-b-2 border-red-600 bg-red-600 px-5 py-4 sm:px-6">
+        <div className="overflow-hidden rounded-2xl border-2 border-white bg-white shadow-[0_10px_30px_-12px_rgba(220,38,38,0.25)]">
+          <div className="border-b-2 border-white bg-black px-5 py-4 sm:px-6">
             <p className="font-heading text-[11px] font-semibold uppercase tracking-[0.18em] text-white">
               Vehicle Spec Sheet
             </p>

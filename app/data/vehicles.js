@@ -106,8 +106,8 @@ export const vehicles = [
     id: "std-corolla-gli",
     category: "Standard Cars",
     name: "Toyota Corolla GLi",
-    image: "/vehicals/New folder/gli.png",
-    imageLarge: "/vehicals/New folder/gli.png",
+    image: "/vehicals/New folder/gli111.png",
+    imageLarge: "/vehicals/New folder/gli111.png",
     seatingCapacity: 5,
     airConditioning: true,
     pricePerDay: 6999,
@@ -172,8 +172,8 @@ export const vehicles = [
     id: "std-civic",
     category: "Standard Cars",
     name: "Honda Civic",
-    image: "/vehicals/New folder/civic.png",
-    imageLarge: "/vehicals/New folder/civic.png",
+    image: "/vehicals/New folder/civic111.png",
+    imageLarge: "/vehicals/New folder/civic111.png",
     seatingCapacity: 5,
     airConditioning: true,
     pricePerDay: 9999,
@@ -411,16 +411,51 @@ export const vehicles = [
   },
 ];
 
+// // Helper: returns vehicles for a given category, safely handling casing/whitespace.
+// export function getVehiclesByCategory(category) {
+//   if (!category) return []; 
+//   const normalized = category.trim().toLowerCase();
+//   return vehicles.filter((v) => v.category.trim().toLowerCase() === normalized);
+// }
+
+// // Helper: category meta lookup (title, description, image) by title.
+// export function getCategoryMeta(category) {
+//   if (!category) return null;
+//   const normalized = category.trim().toLowerCase();
+//   return categories.find((c) => c.title.trim().toLowerCase() === normalized) || null;
+// }
+
 // Helper: returns vehicles for a given category, safely handling casing/whitespace.
+// Sorted by price (lowest to highest).
 export function getVehiclesByCategory(category) {
   if (!category) return [];
+
   const normalized = category.trim().toLowerCase();
-  return vehicles.filter((v) => v.category.trim().toLowerCase() === normalized);
+
+  return vehicles
+    .filter(
+      (v) => v.category.trim().toLowerCase() === normalized
+    )
+    .sort((a, b) => {
+      // Sort by price (ascending)
+      if (a.pricePerDay !== b.pricePerDay) {
+        return a.pricePerDay - b.pricePerDay;
+      }
+
+      // If price is the same, sort alphabetically by name
+      return a.name.localeCompare(b.name);
+    });
 }
 
 // Helper: category meta lookup (title, description, image) by title.
 export function getCategoryMeta(category) {
   if (!category) return null;
+
   const normalized = category.trim().toLowerCase();
-  return categories.find((c) => c.title.trim().toLowerCase() === normalized) || null;
+
+  return (
+    categories.find(
+      (c) => c.title.trim().toLowerCase() === normalized
+    ) || null
+  );
 }
