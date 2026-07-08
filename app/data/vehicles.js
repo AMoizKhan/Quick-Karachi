@@ -66,7 +66,7 @@ export const vehicles = [
     imageLarge: "/vehicals/mira.jpg",
     seatingCapacity: 4,
     airConditioning: true,
-    pricePerDay: 4999,
+    pricePerDay: 5000,
     maxRentalHours: 12,
     fuelPolicy: "Without Fuel",
     description:
@@ -87,7 +87,7 @@ export const vehicles = [
     imageLarge: "/vehicals/New folder/cultus.png",
     seatingCapacity: 4,
     airConditioning: true,
-    pricePerDay: 4999,
+    pricePerDay: 5000,
     maxRentalHours: 12,
     fuelPolicy: "Without Fuel",
     description:
@@ -129,7 +129,7 @@ export const vehicles = [
     category: "Standard Cars",
     name: "Toyota Corolla Altis",
     image: "/vehicals/New folder/grande.png",
-    imageLarge: "/vehicals/New folder/grandes.png",
+    imageLarge: "/vehicals/New folder/grande.png",
     seatingCapacity: 5,
     airConditioning: true,
     pricePerDay: 7999,
