@@ -26,14 +26,14 @@ export default function ContactSection({ showFormOnly = false }) {
           </div>
 
           {/* Content */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center">
             {/* Left */}
             <div>
               <ContactForm />
             </div>
 
             {/* Right */}
-            <div className="hidden lg:block">
+            {/* <div className="hidden lg:block">
               <div className="relative h-[700px] rounded-2xl overflow-hidden border-2  shadow-xl">
                 <Image
                   src="/images/contact1.jpg"
@@ -42,7 +42,7 @@ export default function ContactSection({ showFormOnly = false }) {
                   className="object-cover"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
